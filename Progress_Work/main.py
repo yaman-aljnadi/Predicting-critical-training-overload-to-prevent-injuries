@@ -16,31 +16,24 @@ features = [
     "strength training", "hours alternative", "perceived exertion",
     "perceived trainingSuccess", "perceived recovery"
 ]
-label = "injury"  # Target variable (1 = injury, 0 = no injury)
+label = "injury" 
 
-# Handling multiple weeks of data: Take the most recent week's data
 df = df.groupby("Athlete ID").last().reset_index()
 
-# Select features and target variable
 X = df[features]
 y = df[label]
 
-# Normalize numerical features
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
-# Split data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, random_state=42)
 
-# Train a Random Forest model
 model = RandomForestClassifier(n_estimators=100, random_state=42)
 model.fit(X_train, y_train)
 
-# Evaluate model performance
 y_pred = model.predict(X_test)
 print(f"Model Accuracy: {accuracy_score(y_test, y_pred):.2f}")
 
-# Function to predict injury risk based on user input
 def predict_risk():
     print("\nEnter the following details:")
     user_data = []
@@ -53,5 +46,4 @@ def predict_risk():
     prediction = model.predict(input_scaled)
     print("\nPrediction:", "At Risk" if prediction[0] == 1 else "Not At Risk")
 
-# Run the prediction function
 predict_risk()
