@@ -14,9 +14,9 @@ import json
 import joblib
 
 os.makedirs("results", exist_ok=True)
-os.makedirs("logs/fit", exist_ok=True)
+os.makedirs("logs/fit/Dense", exist_ok=True)
 
-log_dir = "logs/fit/" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+log_dir = "logs/fit/Dense/" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
 tensorboard_callback = TensorBoard(log_dir=log_dir, histogram_freq=1)
 
 df = pd.read_csv("day_approach_maskedID_timeseries.csv")  
@@ -60,14 +60,14 @@ history = model.fit(
     verbose=1
 )
 
-model.save("results/injury_prediction_model.h5")
+model.save("results/Dense/injury_prediction_model.h5")
 
-with open("results/training_history.json", "w") as f:
+with open("results/Dense/training_history.json", "w") as f:
     json.dump(history.history, f)
 
-joblib.dump(scaler, "results/scaler.pkl")
+joblib.dump(scaler, "results/Dense/scaler.pkl")
 
-with open("results/class_weights.json", "w") as f:
+with open("results/Dense/class_weights.json", "w") as f:
     json.dump(class_weight_dict, f)
 
 y_pred_prob = model.predict(X_test)
