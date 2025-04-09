@@ -5,7 +5,7 @@ This project aims to predict running-related injuries using machine learning tec
 **Dataset Source**:  
 [Running Injury Dataset - DataverseNL](https://dataverse.nl/dataset.xhtml?persistentId=doi:10.34894/UWU9PV)
 
-## 📊 Dataset Overview
+## Dataset Overview
 
 The dataset contains longitudinal data collected from runners and is available in two formats:
 - **Daily-level data** (primary focus)
@@ -15,7 +15,7 @@ The daily dataset provides more granular insights into training loads and injury
 
 ---
 
-Explaining the difference between Grouped LSTM and Ungrouped LSTM
+## Explaining the difference between Grouped LSTM and Ungrouped LSTM
 
 **Ungrouped LSTM**
 
@@ -32,11 +32,11 @@ Purpose: To test whether preserving individual training patterns improves predic
 
 ---
 
-## 🧠 Models Developed
+## Models Developed
 
 We evaluated four models on the daily dataset to predict whether a runner would sustain an injury. Below are the models and their performance metrics.
 
-### 📊 Model Performance Comparison
+### Model Performance Comparison
 
 | **Model**           | **Accuracy** | **Precision (Class 1)** | **Recall (Class 1)** | **F1-Score (Class 1)** | **AUC-ROC** |
 |---------------------|--------------|--------------------------|----------------------|------------------------|-------------|
@@ -47,7 +47,7 @@ We evaluated four models on the daily dataset to predict whether a runner would 
 | XGBoost (Original)  | *N/A*        | *N/A*                    | *N/A*                | *N/A*                  | **0.7254**  |
 
 
-### 🔍 Correlation Matrices
+### Correlation Matrices
 
 <div align="center">
 
