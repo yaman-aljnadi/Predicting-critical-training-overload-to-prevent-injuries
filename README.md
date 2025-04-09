@@ -13,7 +13,6 @@ The dataset contains longitudinal data collected from runners and is available i
 
 The daily dataset provides more granular insights into training loads and injury risk, and thus serves as the primary focus of this study.
 
----
 
 ## Explaining the difference between Grouped LSTM and Ungrouped LSTM
 
@@ -30,7 +29,6 @@ Description: Data was grouped by Athlete ID, preserving the temporal order for e
 Effect: Each sequence fed into the LSTM corresponds to a single runner’s history, allowing the model to learn personalized injury risk patterns over time.
 Purpose: To test whether preserving individual training patterns improves predictive performance.
 
----
 
 ## Models Developed
 
