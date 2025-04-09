@@ -18,14 +18,11 @@ The daily dataset provides more granular insights into training loads and injury
 ## 🧠 Models Developed
 
 We evaluated four models on the daily dataset to predict whether a runner would sustain an injury. Below are the models and their performance metrics.
-
-### 1. Random Forest
-
-**Classification Report:**
-
-         precision    recall  f1-score   support
-
-       0       0.98      0.87      0.93     11142
-       1       0.01      0.10      0.02       182
-       
-         accuracy                           0.86     11324
+```
+Model	Accuracy	Precision (Class 1)	Recall (Class 1)	F1-Score (Class 1)	AUC-ROC
+Random Forest	0.86	0.01	0.10	0.02	0.5438
+Simple Neural Net	0.92	0.03	0.14	0.05	0.5481
+Ungrouped LSTM	0.94	0.03	0.09	0.04	0.5411
+Grouped LSTM	0.96	0.14	0.38	0.20	0.7097
+XGBoost (Original)	N/A	N/A	N/A	N/A	0.7254
+```
