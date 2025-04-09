@@ -22,9 +22,10 @@ We evaluated four models on the daily dataset to predict whether a runner would 
 ### 1. Random Forest
 
 **Classification Report:**
+
          precision    recall  f1-score   support
 
        0       0.98      0.87      0.93     11142
        1       0.01      0.10      0.02       182
-
-accuracy                           0.86     11324
+       
+         accuracy                           0.86     11324
