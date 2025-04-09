@@ -43,7 +43,7 @@ We evaluated four models on the daily dataset to predict whether a runner would 
   </tr>
   <tr>
     <td><img src="random_forest.png" width="350"/></td>
-    <td><img src="images/nn_corr.png" width="350"/></td>
+    <td><img src="Single_Neural.png" width="350"/></td>
   </tr>
 </table>
 
@@ -55,8 +55,8 @@ We evaluated four models on the daily dataset to predict whether a runner would 
     <td align="center"><strong>Grouped LSTM</strong></td>
   </tr>
   <tr>
-    <td>![LSTM_Single](https://github.com/user-attachments/assets/84a034c9-0c65-4737-8aa2-904e917eded4)</td>
-    <td><img src="images/grouped_lstm_corr.png" width="350"/></td>
+    <td><img src="LSTM_Single.png" width="350"/></td>
+    <td><img src="LSTM_Grouped.png" width="350"/></td>
   </tr>
 </table>
 ![random_forest](https://github.com/user-attachments/assets/5d79bb70-cabd-4672-9812-40bc025f599e)
