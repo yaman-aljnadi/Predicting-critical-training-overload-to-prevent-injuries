@@ -79,4 +79,14 @@ We evaluated four models on the daily dataset to predict whether a runner would 
 
 </div>
 
+## Conclusion & Future Work
 
+This project demonstrates the potential of personalized machine learning models, particularly Grouped LSTMs, in predicting running-related injuries with higher fidelity than general models. While the grouped approach yielded promising results, there's still room to improve performance, especially in terms of precision and recall for injury prediction.
+
+Future directions may include:
+
+* Incorporating additional physiological or biomechanical features
+* Exploring transformer-based architectures for temporal modeling
+* Fine-tuning class imbalance strategies to improve minority class detection
+
+We hope this work contributes to ongoing efforts in injury prevention for athletes and inspires further research in applying machine learning to real-world health and sports data.
