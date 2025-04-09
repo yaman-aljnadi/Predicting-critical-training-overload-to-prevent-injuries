@@ -42,7 +42,7 @@ We evaluated four models on the daily dataset to predict whether a runner would 
     <td align="center"><strong>Simple Neural Net</strong></td>
   </tr>
   <tr>
-    <td><img src="[images/random_forest_corr.png](https://github.com/user-attachments/assets/5d79bb70-cabd-4672-9812-40bc025f599e)" width="350"/></td>
+    <td><img src="random_forest.png" width="350"/></td>
     <td><img src="images/nn_corr.png" width="350"/></td>
   </tr>
 </table>
