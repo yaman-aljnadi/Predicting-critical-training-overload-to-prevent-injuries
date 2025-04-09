@@ -59,6 +59,7 @@ We evaluated four models on the daily dataset to predict whether a runner would 
     <td><img src="LSTM_Grouped.png" width="350"/></td>
   </tr>
 </table>
-![random_forest](https://github.com/user-attachments/assets/5d79bb70-cabd-4672-9812-40bc025f599e)
 
 </div>
+
+
