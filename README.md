@@ -32,15 +32,32 @@ We evaluated four models on the daily dataset to predict whether a runner would 
 
 ### 🔍 Correlation Matrices
 
-#### Random Forest
-![random_forest](https://github.com/user-attachments/assets/60900704-df50-457e-af92-160dc686c686)
+<div align="center">
 
+### Random Forest & Simple Neural Net
 
-#### Simple Neural Net
-![Single_Neural](https://github.com/user-attachments/assets/7d33262d-7c7b-49a8-ab84-26a80b0a192a)
+<table>
+  <tr>
+    <td align="center"><strong>Random Forest</strong></td>
+    <td align="center"><strong>Simple Neural Net</strong></td>
+  </tr>
+  <tr>
+    <td><img src="images/random_forest_corr.png" width="350"/></td>
+    <td><img src="images/nn_corr.png" width="350"/></td>
+  </tr>
+</table>
 
-#### Ungrouped LSTM
-![LSTM_Single](https://github.com/user-attachments/assets/bab8810c-3d9b-403f-bda7-990f0e72402e)
+### Ungrouped LSTM & Grouped LSTM
 
-#### Grouped LSTM
-![LSTM_Grouped](https://github.com/user-attachments/assets/bb65b163-6837-44b4-a885-d605370212b3)
+<table>
+  <tr>
+    <td align="center"><strong>Ungrouped LSTM</strong></td>
+    <td align="center"><strong>Grouped LSTM</strong></td>
+  </tr>
+  <tr>
+    <td>![LSTM_Single](https://github.com/user-attachments/assets/84a034c9-0c65-4737-8aa2-904e917eded4)</td>
+    <td><img src="images/grouped_lstm_corr.png" width="350"/></td>
+  </tr>
+</table>
+
+</div>
